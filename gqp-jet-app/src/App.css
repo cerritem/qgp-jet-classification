@@ -40,3 +40,51 @@
 .read-the-docs {
   color: #888;
 }
+
+/* Basic 3D flip styles - use alongside Tailwind */
+.flip-container {
+  perspective: 1000px;
+  cursor: pointer;
+  outline: none; /* so focused outline doesn't show unless you want it */
+}
+
+.flipper {
+  transform-style: preserve-3d;
+  height: 100%;
+  width: 100%;
+  position: relative;
+}
+
+.front,
+.back {
+  backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
+  transform-style: preserve-3d;
+}
+
+/* front is default (no rotation) */
+.front {
+  transform: rotateY(0deg);
+  display: flex;
+}
+
+/* back is rotated so it shows when container rotates */
+.back {
+  transform: rotateY(180deg);
+  display: block;
+}
+
+/* toggled class rotates the whole flipper */
+.flipper.is-flipped {
+  transform: rotateY(180deg);
+}
+
+/* small responsive tweak so contents don't overflow */
+.back p { line-height: 1.25; }
+
+/* optional: make the 'click to flip' gray smaller on small screens */
+@media (max-width: 640px) {
+  .front .text-4xl { font-size: 2rem; }
+}
+
+

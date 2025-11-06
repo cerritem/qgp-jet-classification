@@ -1,6 +1,7 @@
 import { NavLink, Outlet, createBrowserRouter, RouterProvider } from "react-router-dom";
 import Home from "./pages/Home.jsx";
 import About from "./pages/About.jsx";
+import Demo from "./pages/Demo.jsx";
 import "./App.css";
 
 const router = createBrowserRouter([
@@ -10,6 +11,7 @@ const router = createBrowserRouter([
     children: [
       { index: true, element: <Home /> },
       { path: "about", element: <About /> },
+      { path: "demo", element: <Demo /> },
     ],
   },
 ]);
@@ -23,6 +25,7 @@ function Layout() {
       <header style={{ display: "flex", gap: 8, marginBottom: 16 }}>
         <NavLink to="/" className={linkClass} end>Home</NavLink>
         <NavLink to="/about" className={linkClass}>About</NavLink>
+        <NavLink to="/demo" className={linkClass}>Demo</NavLink>
       </header>
       <main>
         <Outlet />
