@@ -70,7 +70,7 @@ export default function About() {
           minHeight: "100vh",
         }}
       >
-        <section style={{ maxWidth: 1000, margin: "0 auto" }}>
+        <section style={{ maxWidth: 1500, margin: "0 auto" }}>
           <header style={{ textAlign: "center", marginBottom: 18 }}>
             <h1 style={{ fontSize: 32, margin: 0, color: "#5b21b6" }}>
                Learn more about high energy physics!⚛️
@@ -107,7 +107,7 @@ function FlipCardInline({ label, term, definition, relevance }) {
   const [flipped, setFlipped] = useState(false);
 
   const containerStyle = {
-    perspective: 900,
+    perspective: 1500,
     height: 220,
     cursor: "pointer",
   };

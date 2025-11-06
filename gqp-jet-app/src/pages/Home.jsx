@@ -30,7 +30,7 @@ export default function Home() {
               <p>
                 The goal of our project is to classify the{" "}
                 <a
-                  href="jet_ml_benchmark_config_01_to_09_alpha_0.2_0.3_0.4_q0_1.5_2.0_2.5_MMAT_MLBT_size_1000000_shuffled"
+                  href="https://www.kaggle.com/datasets/haydarmehryar/ml-jet?select=jet_ml_benchmark_config_01_to_09_alpha_0.2_0.3_0.4_q0_1.5_2.0_2.5_MMAT_MLBT_size_1000000_shuffled.pkl"
                   target="_blank"
                   rel="noreferrer"
                 >
