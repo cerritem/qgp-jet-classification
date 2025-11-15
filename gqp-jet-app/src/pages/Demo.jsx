@@ -32,7 +32,7 @@ export default function Demo() {
         >
           {/* Embedded Gradio App */}
           <iframe
-            src="https://YOUR-SPACE-NAME.hf.space"
+            src="https://gqp-jet-team-jet-classifier-demo.hf.space"
             title="Model Demo"
             style={{
               width: "100%",
