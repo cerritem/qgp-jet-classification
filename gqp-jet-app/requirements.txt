@@ -1,0 +1,8 @@
+gradio>=4.0.0
+
+# Match the modern Keras stack used to save your .keras model
+tensorflow-cpu>=2.16.0,<2.19
+keras>=3.0.0,<4
+
+numpy
+Pillow
